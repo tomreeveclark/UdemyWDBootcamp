@@ -1,0 +1,1 @@
+type ! and hit tab, autogenerate HTML boilerplate.
