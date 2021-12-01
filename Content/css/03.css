@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+    width: 50%;
+}
+
+p {
+    /* typical font weights: 400 = 'normal', 700 = bold */
+    font-weight: 400;
+    /* font-weight: normal; */
+
+}

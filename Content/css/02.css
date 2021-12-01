@@ -1,0 +1,23 @@
+h1 {
+    color: lightblue;
+}
+
+h2 {
+    color: rgb(250, 151, 0);
+    /* hex colors are RRGGBB in 0123456789ABCDEF */
+    background-color: rgb(141, 68, 53);
+}
+
+button {
+    color: pink;
+    background-color: indianred;
+}
+
+/* p {
+    color: olive;
+    background-color: orange;
+} */
+
+span {
+    background-color: paleturquoise;
+}
