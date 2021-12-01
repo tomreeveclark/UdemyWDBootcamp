@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <!-- 'action' is the URL destination that the form information is sent to -->
+    <!-- http 'method' = either get or post depending on what to do -->
+    <!-- when you submit the form, elements with a name are concat (&) and sent to the action at the end of the url -->
+    <!-- always put names on inputs -->
+    <form action="https://www.reddit.com/search" method="get">
+        <!-- Only 1x element per ID -->
+        <!-- labels reference IDs not names -->
+        <!-- for some input types, need to add a 'value' attribute -->
+        <!-- add 'required' to require an input before submission of form -->
+        <!-- types of client-side validation include:
+            required
+            minlength = ""
+            maxlength = ""
+            type = "email" or "URL"
+        -->
+        <label for="firstname">Enter your name: </label> <input type="text" placeholder="Your name please..."
+            id="firstname" required><br>
+        <label for="RedditSearch">Reddit query:</label><input type="text" name="q"
+            placeholder="Type your reddit query here..." id="RedditSearch">
+        <label for="password">Enter your password: </label><input type="password" placeholder="Password"
+            id="password"><br>
+        <!-- emails will require "@" to validate -->
+        <label for="email">Enter your email: </label><input type="email" name="email" id="email" required>
+        <label for="time">Pick a time for delivery: </label><input type="time" id="time">
+        <div>
+            <p>Choose your pizza type:</p>
+            <p>
+                <label for="Hawaiian">Hawaiian</label><input type="radio" id="Hawaiian" name="Pizza" value="Hawaiian">
+                <!-- if the label has a space, it will have a "+" -->
+                <label for="Meat Lovers">Meat Lovers</label><input type="radio" id="Meat Lovers" name="Pizza"
+                    value="Meat Lovers">
+                <label for="Supreme">Supreme</label><input type="radio" id="Supreme" name="Pizza" value="Supreme">
+            </p>
+        </div>
+        <input type="color">
+        <!-- you can do this as a shorcut (not recommended) -->
+        <label>
+            Enter some text here:
+            <input type="text">
+        </label>
+        <div>
+            <label for="another thing">This is a checked check-box</label><input type="checkbox" name="who knows"
+                id="another thing" checked>
+        </div>
+        <div>
+            <!-- these will send as name=on or name=off -->
+            <label for="another thing">This is an unchecked check-box</label><input type="checkbox" name="who knows"
+                id="another thing" unchecked>
+        </div>
+        <div>
+            <label for="Selection">Choose an option!</label>
+            <select name="Selection" id="Selection">
+                <!-- if you want an option selected, add selected boolean attribute -->
+                <option value="" selected>Please choose an option...</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="yellow">yellow</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="rangeID"></label>
+            <input type="range" min="0" max="100" value="30" step="5" name="somerange" id="rangeID">
+
+            </input>
+        </div>
+        <!-- When you have a button in the form, it will submit the form by default, even if there are multiple buttons -->
+        <!-- A button will defaul to 'submit' type -->
+        <button type="submit">Submit!</button>
+
+        <button type="button">This button won't do anything.</button>
+        <!-- This will also submit the form -->
+        <input type="submit" value="Click Me!">
+        <p>
+            <textarea name="" id="" cols="30" rows="10" placeholder="type your story here..."></textarea>
+        </p>
+
+    </form>
+
+    <hr>
+
+    <p>
+    <h2>Google Search Form</h2>
+    </p>
+    <div>
+        <!-- you can ignore the ? at the end of the action URL -->
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q">
+            <button>Search Google!</button>
+        </form>
+    </div>
+    <h2>Youtube Search Form</h2>
+    </p>
+    <div>
+        <form action="https://www.youtube.com/results" method="get">
+            <input type="text" name="search_query">
+            <button>Search Youtube!</button>
+        </form>
+    </div>
+</body>
+
+</html>

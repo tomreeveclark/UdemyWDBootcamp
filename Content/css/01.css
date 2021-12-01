@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+}
+
+img {
+    width: 100px;
+    height: 200px;
+}
+
+/* Selectr */
+input[type="text"]:nth-of-type(2n) {
+    border: 2px solid red;
+}
+
+/* 
+
+Typical Format:
+
+selector {
+    property: value;
+} 
+
+*/
