@@ -1,0 +1,129 @@
+/* UNIVERSAL AND ELEMENT SELECTORS
+
+this will attempt to select everything and alter its properties
+
+*/
+
+
+
+* {
+    background-color: white;
+}
+
+button {
+    height: 40px;
+    background-color: darkgoldenrod;
+}
+
+h1, h2 {
+    color: black;
+}
+
+/* ID Selector - individual elements */
+/* This will override any universal selectors */
+/* Don't have more than a handful on a single page as can become cumbersone */
+
+#searchbar {
+    background-color: blueviolet;
+}
+
+#loginbutton {
+    background-color: brown;
+}
+
+#signupbutton {
+    background-color: chocolate;
+}
+
+/* CLASS SELECTOR - similar to ID but can be applied to multiple elements */
+/* Use classes often as easy to group elements */
+
+.smallbutton {
+    background-color: darkseagreen;
+}
+
+.tag {
+    background-color: dimgray;
+    font-size: 0.5em;
+    color: floralwhite;
+    font-weight: lighter;
+}
+
+/* DESCENDANT SELECTOR - SELECT ELEMENTS THAT ARE DESCENDANTS OF ANOTHER ELEMENT */
+
+li a {
+    color: fuchsia;
+}
+
+p a {
+    color:red;
+}
+
+CAN BE USED AS A CLASS DESCENDANT SELECTOR
+.post a {
+    color: green;
+}
+
+/* ADJACENT SELECTOR (COMBINATOR) */
+
+/* this will select p elements that are adjacent (same level) as a preceeeding h1 element */
+
+h1 + p {
+    color: red;
+}
+
+/* DIRECT CHILD */
+
+ul > li {
+    background-color: indianred;
+}
+
+
+/* ATTRIBUTE SELECTOR */
+
+input[type="text"] {
+    color: white;
+}
+
+
+/* examples */
+
+/* a[href="something"] {
+    /* will only select anchor tags with href="something"
+} */ */
+
+/* span.post {
+    will select only spans with the class 'post'
+} */
+
+/* PSEUDO-CLASSES */
+/* KEYWORD ADDED TO A SELECTOR THAT SPECIFIES A SPECIAL STATE OF THE SELECTED ELEMENTS(S) */
+
+a:hover {
+    color: black;
+    text-decoration: overline;
+}
+
+button:active {
+    background-color: turquoise;
+}
+
+/* 
+input[type="radio"]:checked {
+    some property
+} */
+
+.post:nth-of-type(2n-1) {
+    background-color: darkturquoise;
+}
+
+/* PSEUDO-ELEMENTS will pick a particular part of an element rather than state */
+/* PSUEDO ELEMENTS NEED A :: vs CLASSES WHICH NEED : */
+
+h2::first-letter {
+    font-size: 40px;
+}
+
+::selection {
+    background-color: greenyellow;
+}

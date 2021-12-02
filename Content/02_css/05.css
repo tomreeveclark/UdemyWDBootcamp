@@ -1,0 +1,36 @@
+/* CSS = CASCADING STYLE SHEETS */
+
+/* items are read from top > bottom and override */
+/* stylesheets are imported/referenced in order of appearance as well*/
+
+h1 {
+    color: red;
+}
+
+/* this will override ^^ as it is below */
+h1 {
+    color: purple;
+}
+
+/* the !important tag will override anything else */
+h1 {
+    color: purple !important;
+}
+
+/* specificity: */
+
+/* INLINE > ID > CLASS > ELEMENT */
+
+/* 
+specificity score: 
+
+ID  |  Class  | Element
+1       0           0   
+
+*/
+
+/* INHERITANCE */
+
+button {
+    color: inherit;
+}

@@ -1,0 +1,48 @@
+body {
+    /* font-family: fantasy; */
+    font-family: monospace;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+h1 {
+    text-align: center;
+    width: 50%;
+    text-decoration: blue underline overline line-through;
+    letter-spacing: 5px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: monospace;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 20px;
+    text-decoration: plum wavy underline;
+}
+
+p {
+    /* typical font weights: 400 = 'normal', 700 = bold */
+    /* not all weights are supported by all fonts */
+    /* font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400; << normal
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700; << bold
+    font-weight: 800;
+    font-weight: 900; */
+    font-weight: normal;
+    /* line-height is a scalar multiple of text height */
+    line-height: 2; 
+    /* pixels are an absolute unit */
+    /* font-size: 15px; */
+    font-size: 1em;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,43 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: lightpink;
+    /* need border style, width and color for a border to display */
+    border: limegreen;
+    border-style: dashed;
+    border-width: 1,1,1,1;
+    border-radius: 15px;
+    /* or can be shortened to: */
+    /* width | style | color */
+    border: 20px dashed black;
+    /* to make a circle */
+    border-radius: 50%;
+
+    padding: 10px;
+    margin: 10px;
+    /* this sets the entire box including border */
+    box-sizing: border-box;
+} 
+
+div:hover {
+    background-color: magenta;
+}
+
+#one {
+    border-width: 2px;
+    border-top-left-radius: 10px;
+}
+
+#two {
+    border-width: 5px;
+}
+
+#three {
+    border-width: 10px;
+}
+
+h1 {
+    width: 400px;
+    background-color: indianred;
+    padding-left: 100px;
+}
