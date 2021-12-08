@@ -19,6 +19,19 @@ div {
     box-sizing: border-box;
 } 
 
+button {
+    /* this will set padding for all (top/left/right/bottom) */
+    padding: 10px;
+    /* this will add 10px to top, then 5px to left/right together */
+    padding: 10px 5px;
+    /* top | left/right | bottom */
+    padding: 10px 5px 2px;
+    /* top | right | bottom | left */
+    padding: 10px 20px 30px 40px;
+
+    margin: 20px;
+}
+
 div:hover {
     background-color: magenta;
 }
@@ -30,6 +43,7 @@ div:hover {
 
 #two {
     border-width: 5px;
+    margin-left: 200px;
 }
 
 #three {

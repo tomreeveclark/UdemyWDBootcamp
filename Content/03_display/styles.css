@@ -1,0 +1,31 @@
+* {
+    border: 1px solid black;
+}
+
+h1 {
+    background-color: chocolate;
+    /* border: 1px solid black; */
+    display: inline;
+}
+
+span {
+    background-color: crimson;
+    /* border: 1px solid black; */
+    /* display: block; */
+}
+
+div {
+    display: inline-block;
+    /* you can also hide elements with display: none */
+}
+
+#span1 {
+    background-color: crimson;
+    /* this will be ignored as it is inline */
+    width: 400px;
+    /* so will this */
+    height: 200px;
+    /* but this will be respected */
+    padding: 30px;
+    margin: 50px;
+}

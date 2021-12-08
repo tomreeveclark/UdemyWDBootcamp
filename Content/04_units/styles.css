@@ -1,0 +1,12 @@
+section { 
+    width: 50%;
+    height: 500px;
+    background-color: lemonchiffon;
+}
+
+div {
+    width: 50%;
+    height: 25%;
+    background-color: lightgreen;
+    border: 10px solid grey;
+}
