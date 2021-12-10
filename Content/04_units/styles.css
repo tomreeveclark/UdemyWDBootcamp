@@ -1,12 +1,21 @@
-section { 
+section {
+    font-size: 15px;
     width: 50%;
     height: 500px;
-    background-color: lemonchiffon;
+    background-color: burlywood;
 }
 
-div {
-    width: 50%;
-    height: 25%;
-    background-color: lightgreen;
-    border: 10px solid grey;
+h2 {
+    font-size: 0.5em;
 }
+
+h3 {
+    font-size: 0.25em;
+}
+
+ul {
+    font-size: 1.5em;
+}
+
+
+/* Use  */

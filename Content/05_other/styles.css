@@ -1,0 +1,22 @@
+section {
+    height: 500px;
+    width: 500px;
+    background-color: coral;
+}
+
+#rgba {
+    height: 50%;
+    width: 50%;
+    /* rbga = rgb and alpha-channel - this will apply to the background colour only */
+    background-color: rgba(255,255,255,0.5);
+    /* or:  */
+    background-color: #8d3434c7;
+}
+
+#opacity {
+    height: 50%;
+    width: 50%;
+    background-color: violet;
+    /* Opacity will affect the entire element */
+    opacity: 0.5;
+}
