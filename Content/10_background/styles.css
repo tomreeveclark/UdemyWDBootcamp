@@ -1,0 +1,21 @@
+section {
+    width: 80%;
+    height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80);
+    background-size: cover;
+    /* this will give a top/bottom margin of 0 and center in page */
+    margin: 0 auto;
+    /* this is where the background-image starts */
+    background-position: bottom;
+}
+
+section {
+    /* if you want to use background-size, needs to be 
+    after position with a '/' */
+    background: no-repeat center/40% url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80), blueviolet;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+}
